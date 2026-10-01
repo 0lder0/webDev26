@@ -36,6 +36,10 @@ body header ul li a{
     color: rgb(0, 0, 0);
 }
 
+body header ul li a:hover{
+    color: rgb(125,125,125);
+}
+
 .indexLayout {
     display: grid;
     grid-template-columns: minmax(70px,1fr) minmax(0, 3fr) minmax(70px,1fr);
@@ -99,7 +103,7 @@ body header ul li a{
     font-size: 20px;
 }
 
-.post-footer {
+.post-body + .post-footer {
     padding: 0 16px 16px;
 }
 
