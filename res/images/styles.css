@@ -103,7 +103,7 @@ body header ul li a:hover{
     font-family: Arial, sans-serif;
 }
 
-.post-footer {
+.post-body + .post-footer {
     padding: 0 16px 16px;
 }
 
