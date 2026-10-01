@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+
+body header {
+    background: rgb(199, 198, 198);
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+}
+
+body header ul {
+    list-style: none;
+	display: flex;
+    flex-direction: row;
+    padding: 30px;
+    padding-bottom: 17px;
+    gap: 50px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-left: auto;
+}
+
+body header ul li img {
+    height: 50px;
+    width: auto;
+}
+
+body header ul li a{
+    font-size: x-large;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+
