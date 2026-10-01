@@ -132,7 +132,7 @@ body > footer {
     
 }
 
-.login-form a.button {
+.login-form button {
     padding: 10px 20px;
     font-size: 20px;
     font-weight: bold;
