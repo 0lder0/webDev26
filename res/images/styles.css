@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body > header {
+    background: rgb(199, 198, 198);
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+}
+
+body header ul {
+    list-style: none;
+	display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px;
+    padding-bottom: 17px;
+    gap: 50px;
+}
+
+.icon {
+    
+    margin-left: auto;
+}
+
+body header ul li img {
+    height: 50px;
+    width: auto;
+}
+
+body header ul li a{
+    font-size: x-large;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+body header ul li a:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+body header ul.icon li a:hover {
+    background-color: transparent; 
+}
+
+.indexLayout {
+    display: grid;
+    grid-template-columns: minmax(70px,1fr) minmax(0, 3fr) minmax(70px,1fr);
+    gap: 24px;
+    justify-content: center;
+    padding: 24px;
+}
+
+.sidebarLeft {
+    background-color: rgb(199, 198, 198);
+    border-radius: 5px;
+}
+
+.sidebarRight {
+    background-color: rgb(199, 198, 198);
+    border-radius: 5px;
+}
+
+.feed {
+    min-width: 0;
+}
+
+.post {
+    margin: 15px 0;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #dbdbdb;
+}
+
+.postHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+}
+
+.userIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.post-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.post-body {
+    padding: 16px;
+}
+
+.post-text {
+    font-family: Arial, sans-serif;
+}
+
+.post-footer {
+    padding: 0 16px 16px;
+}
+
+.like-btn {
+    padding: 6px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.like-btn img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+@media (max-width: 800px) {
+    .indexLayout {
+        grid-template-columns: minmax(70px, 1fr) minmax(0, 3fr) minmax(70px, 1fr);
+        padding: 12px;
+    }
+}
+
+body > footer {
+    background-color: rgb(199, 198, 198);
+    text-align: center;
+    padding: 10%;
+    font-size: x-large;
+    
+}
+
+.login-form button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(0, 88, 143);
+    color: white;
+    cursor: pointer;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #e2e2e2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    gap: 10px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border:none;
+}
+
+.login-form > p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.login-form a {
+    text-decoration: none;
+    color: rgb(0, 157, 255);
+}
+
+.add-post-form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.form-row label {
+    width: 30%;
+    text-align: left;
+}
+
+label + textarea, 
+label + input[type="file"] {
+    width: 65%;
+}
+
+label + textarea {
+    height: 80px;
+    resize: none;
+    padding: 5px;
+}
+
+.form-row ~ .submit-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.add-post-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(0, 88, 143);
+    color: white;
+    cursor: pointer;
+}
+
+.add-post-form button:hover {
+    background-color: rgb(0, 60, 100);
+}
