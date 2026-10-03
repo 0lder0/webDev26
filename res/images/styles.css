@@ -12,7 +12,7 @@ body > header {
 
 body header ul {
     list-style: none;
-	display: flex;
+    display: flex;
     align-items: center;
     flex-direction: row;
     padding: 30px;
@@ -21,7 +21,6 @@ body header ul {
 }
 
 .icon {
-    
     margin-left: auto;
 }
 
@@ -106,10 +105,10 @@ body header ul.icon li a:hover {
 }
 
 .post-text {
-    font-family: Arial, sans-serif;
+    font-size: 20px;
 }
 
-.post-footer {
+.post-body + .post-footer {
     padding: 0 16px 16px;
 }
 
@@ -139,7 +138,6 @@ body > footer {
     text-align: center;
     padding: 10%;
     font-size: x-large;
-    
 }
 
 .login-form button {
@@ -184,6 +182,7 @@ form {
     margin-bottom: 10px;
     font-weight: bold;
 }
+
 .login-form a {
     text-decoration: none;
     color: rgb(0, 157, 255);
