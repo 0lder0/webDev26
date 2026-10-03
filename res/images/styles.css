@@ -12,7 +12,7 @@ body > header {
 
 body header ul {
     list-style: none;
-	display: flex;
+    display: flex;
     align-items: center;
     flex-direction: row;
     padding: 30px;
@@ -21,7 +21,6 @@ body header ul {
 }
 
 .icon {
-    
     margin-left: auto;
 }
 
@@ -34,10 +33,16 @@ body header ul li a{
     font-size: x-large;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
-body header ul li a:hover{
-    color: rgb(125,125,125);
+body header ul li a:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+body header ul.icon li a:hover {
+    background-color: transparent; 
 }
 
 .indexLayout {
@@ -133,7 +138,6 @@ body > footer {
     text-align: center;
     padding: 10%;
     font-size: x-large;
-    
 }
 
 .login-form button {
@@ -178,7 +182,57 @@ form {
     margin-bottom: 10px;
     font-weight: bold;
 }
+
 .login-form a {
     text-decoration: none;
     color: rgb(0, 157, 255);
+}
+
+.add-post-form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.form-row label {
+    width: 30%;
+    text-align: left;
+}
+
+label + textarea, 
+label + input[type="file"] {
+    width: 65%;
+}
+
+label + textarea {
+    height: 80px;
+    resize: none;
+    padding: 5px;
+}
+
+.form-row ~ .submit-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.add-post-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(0, 88, 143);
+    color: white;
+    cursor: pointer;
+}
+
+.add-post-form button:hover {
+    background-color: rgb(0, 60, 100);
 }
