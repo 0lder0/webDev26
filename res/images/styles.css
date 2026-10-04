@@ -104,7 +104,8 @@ body header ul.icon li a:hover {
 }
 
 .post-text {
-    font-size: 20px;
+    color: #666;
+    font-size: 0.9rem;
 }
 
 .post-body + .post-footer {
