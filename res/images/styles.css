@@ -12,16 +12,14 @@ body > header {
 
 body header ul {
     list-style: none;
-	display: flex;
+    display: flex;
     align-items: center;
     flex-direction: row;
     padding: 30px;
     padding-bottom: 17px;
-    gap: 50px;
 }
 
 .icon {
-    
     margin-left: auto;
 }
 
@@ -34,10 +32,16 @@ body header ul li a{
     font-size: x-large;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
-body header ul li a:hover{
-    color: rgb(125,125,125);
+body header ul li a:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+body header ul.icon li a:hover {
+    background-color: transparent; 
 }
 
 .indexLayout {
@@ -100,7 +104,7 @@ body header ul li a:hover{
 }
 
 .post-text {
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
 
 .post-body + .post-footer {
@@ -130,13 +134,14 @@ body header ul li a:hover{
 
 body > footer {
     background-color: rgb(199, 198, 198);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10%;
     font-size: x-large;
-    
 }
 
-.login-form a.button {
+.login-form button {
     padding: 10px 20px;
     font-size: 20px;
     font-weight: bold;
@@ -178,7 +183,86 @@ form {
     margin-bottom: 10px;
     font-weight: bold;
 }
+
 .login-form a {
     text-decoration: none;
     color: rgb(0, 157, 255);
+}
+
+.add-post-form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.form-row label {
+    width: 30%;
+    text-align: left;
+}
+
+label + textarea, 
+label + input[type="file"] {
+    width: 65%;
+}
+
+label + textarea {
+    height: 80px;
+    resize: none;
+    padding: 5px;
+}
+
+.form-row ~ .submit-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.add-post-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(0, 88, 143);
+    color: white;
+    cursor: pointer;
+}
+
+.add-post-form button:hover {
+    background-color: rgb(0, 60, 100);
+}
+
+@media (max-width: 680px) {
+    body header ul li a {
+        font-size: large;
+    }
+
+    .post-text {
+        font-size: 16px;
+    }
+
+    body > footer {
+        font-size: large;
+    }
+
+    .login-form button,
+    .login-form > p {
+        font-size: 16px;
+    }
+
+    .add-post-form button {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    body > footer {
+        height: 15vh;
+    }
 }
