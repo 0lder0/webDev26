@@ -191,6 +191,11 @@ form {
     color: rgb(0, 157, 255);
 }
 
+.login-form a:hover {
+    text-decoration: underline;
+    color: rgb(0, 88, 143);
+}
+
 .add-post-form {
     width: 100%;
 }
