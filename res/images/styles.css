@@ -100,7 +100,7 @@ body header ul li a:hover{
 }
 
 .post-text {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .post-body + .post-footer {
