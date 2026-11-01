@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const feedSection = document.querySelector(".feed");
 
-    fetch('https://api.npoint.io/ed514e69c9cd441353cd')
+    //fetch('https://api.npoint.io/ed514e69c9cd441353cd')
+    fetch('res/Posts.json')
         .then(response => response.json())
         .then(json => {
             json.forEach(post => {
