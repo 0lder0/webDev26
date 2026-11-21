@@ -3,7 +3,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-body > header {
+.site-header {
     background: rgb(199, 198, 198);
     display: flex;
     flex-direction: row;
@@ -134,7 +134,7 @@ body header ul.icon li a:hover {
     }
 }
 
-body > footer {
+.site-footer {
     background-color: rgb(199, 198, 198);
     display: flex;
     justify-content: center;
@@ -254,7 +254,7 @@ label + textarea {
         font-size: 16px;
     }
 
-    body > footer {
+    .site-footer {
         font-size: large;
     }
 
@@ -269,7 +269,7 @@ label + textarea {
     h1 {
         font-size: 24px;
     }
-    body > footer {
+    .site-footer {
         height: 15vh;
     }
 }
@@ -322,4 +322,13 @@ label + textarea {
 .dropdown-menu a:hover {
     text-decoration: underline;
     background-color: transparent !important;
+}
+
+.Reset-Likes{
+    border-radius: 5px;
+    background-color: rgba(127, 255, 212, 0.608);
+}
+.Reset-Likes:hover{
+    background-color: rgba(127, 255, 212, 1);
+    cursor: pointer;
 }
